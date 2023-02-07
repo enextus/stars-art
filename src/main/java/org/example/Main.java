@@ -8,21 +8,8 @@ public class Main {
     private static final Logger logger = LogManager.getLogger("Sterne Class");
 
     public static void main(String[] args) {
-
-        Sterne st = new Sterne();
-
-        st.printSterne();
-        st.printTime();
-
-        System.out.println("Instances count: " + Sterne.count + "\n");
-
-        String stlog = logger.getName();
-
-        System.out.println("stlog: " + stlog);
-
-        logger.info("Sterne done!");
-
-
+        Executable task = new SimpleTask();
+        task.execute();  // outputs "Simple Task executed"
     }
 
 }

@@ -1,11 +1,7 @@
 package org.example;
 
-import org.apache.log4j.Logger;
-
 public class SimpleTask implements Executable {
 
-    private static final Logger logger = Logger.getLogger(Main.class);
-    
     @Override
     public void execute() {
         System.out.println("Simple Task executed");

@@ -39,8 +39,6 @@ public class Sterne {
                 + localTime.getHour() + ":"
                 + localTime.getMinute() + ":"
                 + localTime.getSecond());
-
-        System.out.println("Instances count: " + Sterne.count);
     }
 
 }

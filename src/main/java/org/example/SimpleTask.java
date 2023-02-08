@@ -19,9 +19,8 @@ public class SimpleTask implements Executable {
         System.out.println("Instances count: " + Sterne.count + "\n");
 
         String stlog = logger.getName();
-
         System.out.println("stlog: " + stlog);
-
         logger.info("Sterne done!");
     }
+
 }

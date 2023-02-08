@@ -1,11 +1,10 @@
 package org.example;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.apache.log4j.Logger;
 
 public class SimpleTask implements Executable {
 
-    private static final Logger logger = LogManager.getLogger("Sterne Class");
+    private static final Logger logger = Logger.getLogger(Main.class);
     
     @Override
     public void execute() {

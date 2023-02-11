@@ -41,5 +41,4 @@ public class Sterne {
                 + localTime.getSecond());
     }
 
-
 }

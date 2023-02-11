@@ -17,7 +17,7 @@ public class SterneTest {
         System.setOut(new PrintStream(outContent));
         Sterne sterne = new Sterne();
         sterne.printSterne();
-        assertEquals("static block: count = 0\r\n            \n*          *\n**        **\n***      ***\n****    ****\n*****  *****\n************\n",
+        assertEquals("static block: count = 0\n            \n*          *\n**        **\n***      ***\n****    ****\n*****  *****\n************\n",
                 outContent.toString());
     }
 

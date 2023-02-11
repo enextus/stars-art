@@ -5,19 +5,36 @@
       <ExecutionSettings>
         <option name="goals">
           <list>
-            <option value="install" />
+            <option value="package" />
           </list>
         </option>
       </ExecutionSettings>
     </option>
+    <option name="currentSettingsLabel" value="111" />
     <option name="goalsHistory">
       <History>
         <option name="items">
           <list>
+            <option value="package" />
             <option value="install" />
           </list>
         </option>
       </History>
+    </option>
+    <option name="favorite">
+      <map>
+        <entry key="111">
+          <value>
+            <ExecutionSettings>
+              <option name="goals">
+                <list>
+                  <option value="package" />
+                </list>
+              </option>
+            </ExecutionSettings>
+          </value>
+        </entry>
+      </map>
     </option>
     <option name="visibleSettings">
       <set>

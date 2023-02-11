@@ -1,6 +1,19 @@
 package org.example;
 
+import java.time.LocalTime;
+
 public class Sterne {
+
+    static int count = 0;
+
+    static {
+        System.out.println("static block: count = " + count);
+    }
+
+    public Sterne() {
+        Sterne.count++;
+    }
+
     public void printSterne() {
         for (int i = 1; i <= 7; i++) {
 
@@ -19,5 +32,14 @@ public class Sterne {
             System.out.print("\n");
         }
     }
+
+    public void printTime() {
+        LocalTime localTime = LocalTime.now();
+        System.out.println("Local time: "
+                + localTime.getHour() + ":"
+                + localTime.getMinute() + ":"
+                + localTime.getSecond());
+    }
+
 
 }

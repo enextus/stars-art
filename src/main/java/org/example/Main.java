@@ -6,7 +6,6 @@ import org.slf4j.LoggerFactory;
 public class Main {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(Main.class);
-
     private static final String TASK_EXECUTED_MESSAGE = "Task executed: {}";
 
     public static void main(String[] args) {
@@ -19,4 +18,3 @@ public class Main {
     }
 
 }
-

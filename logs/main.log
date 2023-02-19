@@ -1,6 +1,0 @@
-2023-02-08 17:15:27,813 +0100 [main] INFO  (SimpleTask.java:31) - Sterne done!
-2023-02-08 17:17:17,203 +0100 [main] INFO  (SimpleTask.java:31) - Sterne done!
-2023-02-08 17:18:59,429 +0100 [main] INFO  (SimpleTask.java:31) - Sterne done!
-2023-02-09 09:27:24,123 +0100 [main] INFO  (Main.java:14) - Task executed: org.example.SimpleTask@18769467
-2023-02-09 09:32:46,956 +0100 [main] INFO  (Main.java:15) - Task executed: org.example.SimpleTask@18769467
-2023-02-09 09:33:14,861 +0100 [main] INFO  (Main.java:15) - Task executed: org.example.SimpleTask@18769467

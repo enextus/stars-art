@@ -35,7 +35,7 @@ public class Sterne {
 
     public void printTime() {
         LocalTime localTime = LocalTime.now();
-        System.out.println("Local time: "
+        System.out.println("\nLocal time: "
                 + localTime.getHour() + ":"
                 + localTime.getMinute() + ":"
                 + localTime.getSecond());

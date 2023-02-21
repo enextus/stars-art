@@ -1,0 +1,2 @@
+2023-02-21 12:59:16.949 --- thread_id="1" thread_name="main" thread_priority="5" --- [ERROR] Error log message
+2023-02-21 12:59:16.954 --- thread_id="1" thread_name="main" thread_priority="5" --- [FATAL] Fatal log message

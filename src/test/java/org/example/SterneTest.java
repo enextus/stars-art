@@ -20,12 +20,12 @@ public class SterneTest {
         assertEquals("""
                         static block: count = 0
                                    \s
-                        *          *
-                        **        **
-                        ***      ***
-                        ****    ****
-                        *****  *****
-                        ************
+                        *          +
+                        **        ++
+                        ***      +++
+                        ****    ++++
+                        *****  +++++
+                        ******++++++
                         """,
                 outContent.toString());
     }

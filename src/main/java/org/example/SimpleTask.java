@@ -11,7 +11,8 @@ public class SimpleTask implements Executable {
         st.printSterne();
         st.printTime();
 
-        System.out.println("Instances count: " + Sterne.count + "\n");
+        /* System.out.println("Instances count: " + Sterne.count + "\n"); */
+        System.out.print("Instances count: " + Sterne.count);
     }
 
 }

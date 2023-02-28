@@ -29,6 +29,7 @@ class SterneTests {
         Sterne sterne2 = new Sterne(); // instantiated second object
         assertEquals(2, Sterne.count, "Should increment count");
     }
+
 /*
     @DisplayName("Should increment count")
     @Test

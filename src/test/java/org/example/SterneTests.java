@@ -31,6 +31,27 @@ class SterneTests {
     }
 
 /*
+    @DisplayName("testPrintSterne :)")
+    @Test
+    public void testPrintSterne() {
+        System.setOut(new PrintStream(outContent));
+        Sterne sterne = new Sterne();
+        sterne.printSterne();
+        assertEquals("""
+                        static block: count = 0
+                                   \s
+                        *          +
+                        **        ++
+                        ***      +++
+                        ****    ++++
+                        *****  +++++
+                        ******++++++
+                        """,
+                outContent.toString());
+    }*/
+
+
+/*
     @DisplayName("Should increment count")
     @Test
     void testConstructor_one_count_two_count() {

@@ -1,5 +1,6 @@
 package org.example;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -19,39 +20,25 @@ class SterneTests {
 	void setUpStreams() {
 		System.setOut(new PrintStream(outContent));
 	}
-/*
 
+	@DisplayName("testPrintSterne :)")
 	@Test
-	void testConstructor() {
-		Sterne sterne = new Sterne();
-		assertEquals(1, Sterne.count, "Should increment count");
-	}
-*/
-
-/*	@Test
-	void testPrintSterne() {
+	public void testPrintSterne() {
+		System.setOut(new PrintStream(outContent));
 		Sterne sterne = new Sterne();
 		sterne.printSterne();
-		String expected = "              \n" +
-				"*            +\n" +
-				"**          ++\n" +
-				"***        +++\n" +
-				"****      ++++\n" +
-				"*****    +++++\n" +
-				"******  ++++++\n";
-		assertEquals(expected, outContent.toString(), "Should print a star pattern");
-	}*/
-
-/*	@Test
-	void testPrintTime() {
-		Sterne sterne = new Sterne();
-		sterne.printTime();
-		LocalTime localTime = LocalTime.now();
-		String expected = "\nLocal time: " + localTime.getHour() + ":"
-				+ localTime.getMinute() + ":"
-				+ localTime.getSecond() + "\n";
-		assertEquals(expected, outContent.toString(), "Should print local time");
-	}*/
+		assertEquals("""
+						static block: count = 0
+						           \s
+						*          +
+						**        ++
+						***      +++
+						****    ++++
+						*****  +++++
+						******++++++
+						""",
+				outContent.toString());
+	}
 
 	@Test
 	void testCount() {
@@ -59,13 +46,6 @@ class SterneTests {
 		Sterne sterne2 = new Sterne();
 		assertEquals(2, Sterne.count, "Should increment count for each instance");
 	}
-
-/*	@Test
-	void testCountStaticBlock() {
-		new Sterne();
-		String expected = "static block: count = 0\n";
-		assertEquals(expected, outContent.toString(), "Should print static block message");
-	}*/
 
 	@Test
 	void testPrintSterneEmpty() {
@@ -77,15 +57,22 @@ class SterneTests {
 		assertFalse(output.contains("!"), "Should not contain exclamation marks");
 	}
 
-/*	@Test
+	@Test
 	void testPrintTimeFormat() {
 		Sterne sterne = new Sterne();
+
 		sterne.printTime();
+
+
+
 		String output = outContent.toString();
+
+//		System.out.println("output: " + output);
+
 		System.out.println("output: " + output.toString());
 		assertTrue(output.matches("\\nLocal time: \\d{1,2}:\\d{1,2}:\\d{1,2}\\n"),
 				"Should print local time in correct format");
-	}*/
+	}
 
 }
 

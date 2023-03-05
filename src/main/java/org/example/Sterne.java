@@ -1,20 +1,25 @@
 package org.example;
 
 import java.time.LocalTime;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class Sterne {
+
+    private static AtomicInteger count = new AtomicInteger(0);
+
     public static int getCount() {
-        return count;
+        return  count.get();
     }
 
-    static int count = 0;
+    //static int count = 0;
 
     static {
-        System.out.println("static block: count = " + count);
+        System.out.println("static block: count = " + count.get());
     }
 
     public Sterne() {
-        Sterne.count++;
+        //Sterne.count++;
+        count.incrementAndGet();
     }
 
     public void printSterne() {

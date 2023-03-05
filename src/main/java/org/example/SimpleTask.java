@@ -13,7 +13,6 @@ public class SimpleTask implements Executable {
         st.printSterne();
         st.printTime();
 
-
         // Создание объекта функционального интерфейса с помощью method reference
         Function<String, Integer> converter = Integer::parseInt;
         int number = converter.apply("12345"); // number = 123

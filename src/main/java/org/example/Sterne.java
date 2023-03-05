@@ -3,6 +3,9 @@ package org.example;
 import java.time.LocalTime;
 
 public class Sterne {
+    public static int getCount() {
+        return count;
+    }
 
     static int count = 0;
 

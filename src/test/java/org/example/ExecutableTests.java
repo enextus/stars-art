@@ -13,40 +13,40 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class ExecutableTests {
 
-    private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+	private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 /*
     @BeforeEach
     void setUpStreams() {
         System.setOut(new PrintStream(outContent));
     }*/
 
-    @DisplayName("Should increment count")
-    @Test
-    void testConstructor_one_count_two_count() {
-        Sterne sterne = new Sterne(); // instantiated one object
-        System.out.println("Count after creating first object: " + Sterne.count);
-        assertEquals(1, Sterne.count, "Should increment count");
+	@DisplayName("Should increment count")
+	@Test
+	void testConstructor_one_count_two_count() {
+		Sterne sterne = new Sterne(); // instantiated one object
+		System.out.println("Count after creating first object: " + Sterne.getCount());
+		assertEquals(1, Sterne.getCount(), "Should increment count");
 
-        Sterne sterne2 = new Sterne(); // instantiated second object
-        System.out.println("Count after creating second object: " + Sterne.count);
-        assertEquals(2, Sterne.count, "Should increment count");
-    }
+		Sterne sterne2 = new Sterne(); // instantiated second object
+		System.out.println("Count after creating second object: " + Sterne.getCount());
+		assertEquals(2, Sterne.getCount(), "Should increment count");
+	}
 
-    @Test
-    void testExecute() {
-        Executable executable = () -> System.out.println("Executing...");
-        assertDoesNotThrow(executable::execute, "Should not throw any exception");
-    }
+	@Test
+	void testExecute() {
+		Executable executable = () -> System.out.println("Executing...");
+		assertDoesNotThrow(executable::execute, "Should not throw any exception");
+	}
 
-    @Test
-    void testExecuteMultipleTimes() {
-        AtomicInteger count = new AtomicInteger();
-        Executable executable = () -> count.getAndIncrement();
-        executable.execute();
-        executable.execute();
-        executable.execute();
+	@Test
+	void testExecuteMultipleTimes() {
+		AtomicInteger count = new AtomicInteger();
+		Executable executable = () -> count.getAndIncrement();
+		executable.execute();
+		executable.execute();
+		executable.execute();
 
-        assertEquals(3, count.get(), "Should have been executed three times");
-    }
+		assertEquals(3, count.get(), "Should have been executed three times");
+	}
 
 }

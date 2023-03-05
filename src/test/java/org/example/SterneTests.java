@@ -24,10 +24,10 @@ class SterneTests {
 	@Test
 	void testConstructor_one_count_two_count_2() {
 		Sterne sterne = new Sterne(); // instantiated one object
-		assertEquals(1, Sterne.count, "Should increment count");
+		assertEquals(1, Sterne.getCount(), "Should increment count");
 
 		Sterne sterne2 = new Sterne(); // instantiated second object
-		assertEquals(2, Sterne.count, "Should increment count");
+		assertEquals(2, Sterne.getCount(), "Should increment count");
 	}
 
 	@DisplayName("testPrintSterne :)")
@@ -53,7 +53,7 @@ class SterneTests {
 	void testCount() {
 		Sterne sterne1 = new Sterne();
 		Sterne sterne2 = new Sterne();
-		assertEquals(2, Sterne.count, "Should increment count for each instance");
+		assertEquals(2, Sterne.getCount(), "Should increment count for each instance");
 	}
 
 	@Test

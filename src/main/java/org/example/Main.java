@@ -8,7 +8,7 @@ public class Main {
                 simpleTask.execute();
             });
             thread.start();
-            thread.join(); // блокируем поток до завершения SimpleTask
+            thread.join(); // block thread until SimpleTask completes
         }
     }
 

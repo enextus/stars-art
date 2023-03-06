@@ -1,14 +1,15 @@
 package org.example;
 
-import java.util.function.Function;
-
 public class Main {
-
-    public static void main(String[] args) {
-
-        Executable task = new SimpleTask();
-
-        task.execute();  // outputs "Simple Task executed"
+    public static void main(String[] args) throws InterruptedException {
+        for (int i = 0; i < 3; i++) {
+            Thread thread = new Thread(() -> {
+                SimpleTask simpleTask = new SimpleTask();
+                simpleTask.execute();
+            });
+            thread.start();
+            thread.join(); // блокируем поток до завершения SimpleTask
+        }
     }
 
 }

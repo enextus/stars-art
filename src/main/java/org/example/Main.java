@@ -2,7 +2,7 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException {
-        for (int i = 0; i < 300; i++) {
+        for (int i = 0; i < 3; i++) {
             Thread thread = new Thread(() -> {
                 SimpleTask simpleTask = new SimpleTask();
                 simpleTask.execute();
